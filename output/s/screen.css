@@ -1,0 +1,167 @@
+/* line 4, ../../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/compass-0.10.2/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
+html, body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+}
+
+/* line 6, ../../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/compass-0.10.2/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
+html {
+  font-size: 100.01%;
+}
+
+/* line 16, ../../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/compass-0.10.2/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
+div, span, object, iframe, h1, h2, h3, h4, h5, h6, p,
+pre, a, abbr, acronym, address, code, del, dfn, em, img,
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption, tbody, tfoot, thead, tr {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+}
+
+/* line 18, ../../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/compass-0.10.2/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
+blockquote, q {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+  quotes: "" "";
+}
+/* line 45, ../../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/compass-0.10.2/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+}
+
+/* line 20, ../../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/compass-0.10.2/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
+th, td, caption {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 22, ../../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/compass-0.10.2/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
+table {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+  border-collapse: separate;
+  border-spacing: 0;
+  vertical-align: middle;
+}
+
+/* line 24, ../../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/compass-0.10.2/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 3, ../../content/style/screen.sass */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Georgia, Palatino, Times, "Times New Roman", sans-serif;
+}
+
+/* line 9, ../../content/style/screen.sass */
+body {
+  background: white;
+}
+
+/* line 13, ../../content/style/screen.sass */
+a {
+  text-decoration: none;
+}
+/* line 16, ../../content/style/screen.sass */
+a:link, a:visited {
+  color: #ff3300;
+}
+/* line 19, ../../content/style/screen.sass */
+a:hover {
+  color: #ff9900;
+}
+
+/* line 23, ../../content/style/screen.sass */
+#main {
+  position: absolute;
+  top: 40px;
+  left: 280px;
+  width: 500px;
+}
+/* line 29, ../../content/style/screen.sass */
+#main h1 {
+  font-size: 40px;
+  font-weight: normal;
+  line-height: 40px;
+  letter-spacing: -1px;
+}
+/* line 35, ../../content/style/screen.sass */
+#main p {
+  margin: 20px 0;
+  font-size: 15px;
+  line-height: 20px;
+}
+/* line 40, ../../content/style/screen.sass */
+#main ul {
+  margin: 20px;
+}
+/* line 43, ../../content/style/screen.sass */
+#main li {
+  list-style-type: square;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+/* line 49, ../../content/style/screen.sass */
+#sidebar {
+  position: absolute;
+  top: 40px;
+  left: 20px;
+  width: 200px;
+  padding: 20px 20px 0 0;
+  border-right: 1px solid #cccccc;
+  text-align: right;
+}
+/* line 58, ../../content/style/screen.sass */
+#sidebar h2 {
+  text-transform: uppercase;
+  font-size: 13px;
+  color: #333333;
+  letter-spacing: 1px;
+  line-height: 20px;
+}
+/* line 65, ../../content/style/screen.sass */
+#sidebar ul {
+  list-style-type: none;
+  margin: 20px 0;
+}
+/* line 69, ../../content/style/screen.sass */
+#sidebar li {
+  font-size: 14px;
+  line-height: 20px;
+}
