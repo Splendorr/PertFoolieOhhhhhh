@@ -13,11 +13,71 @@
 // change '#page' to match your HTML container element(s)
 #page
   +container
-  +show-grid("grid.png")
+  //+show-grid("grid.png")
 
 // show-grid loads a 64+16x24 grid image by default
 // For other grid settings, run `compass grid-img 30+10x20`
 // Where 30 is the column width, 10 is the gutter width, 
 // and 20 is the (optional) line-height.
 
+//#page *
+  background-color: rgba(0, 0, 0, 0.125)
+
 // Styles --------------------------------------------------------------
+
+// Color Variables -----------------------------------------------------
+
+$white      : #FFF
+$bgred      : #3b000b
+
+// General Styles
+
+body
+  background-color: $bgred
+  color: $white
+  
+#fullwidth
+  +columns(12)
+  +omega
+  +leader(1, 24px)
+  
+  //*
+    background-color: rgba(0, 0, 0, 0.3)
+
+#leftmost
+  +columns(9, 12)
+
+#sitetitle
+  +columns(9, 9)
+  //padding: 24px 24px 24px 24px
+  background-color: rgba(0, 0, 0, 0.25)
+  //background-color: rgba(0, 50, 94, 0.5)
+  
+  #splendorr
+    +adjust-font-size-to(48px)
+    padding: 24px 24px 0px 24px
+  #subtitorr
+    +adjust-font-size-to(24px)
+    margin-left: 8em
+    padding-bottom: 16px
+  
+#toc
+  +columns(8, 9)
+  +prefix(1, 9)
+  +leader(1, 24px)
+  //+omega(8)
+  padding-top: 16px
+  padding-bottom: 16px
+  background-color: rgba(0, 0, 0, 0.25)
+  
+.toctitle
+  +adjust-font-size-to(30px)
+  font-style: italic
+.tocheader
+  +adjust-font-size-to(24px)
+  padding-left: 16px
+  
+#rightmost
+  +columns(3, 12)
+  +omega(12)
+  background-color: rgba(0, 0, 0, 0.25)

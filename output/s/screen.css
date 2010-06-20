@@ -365,11 +365,99 @@ body {
   margin-right: auto;
   width: 61em;
   max-width: 100%;
-  background-image: url('/i/grid.png');
-  background-repeat: repeat;
-  background-position: 1em 0;
 }
 /* line 8, /usr/local/lib/ruby/gems/1.9.1/gems/compass-0.10.2/frameworks/compass/stylesheets/compass/utilities/general/./_hacks.scss */
 #page {
   display: block;
+}
+
+/* line 35, content/s/screen.sass */
+body {
+  background-color: #3b000b;
+  color: white;
+}
+
+/* line 39, content/s/screen.sass */
+#fullwidth {
+  display: inline;
+  float: left;
+  width: 96.721%;
+  margin-right: 1.639%;
+  display: inline;
+  float: right;
+  margin-right: 1.639%;
+  /* ugly hacks for IE6-7 */
+  #margin-left: -1em;
+  margin-top: 1em;
+}
+
+/* line 47, content/s/screen.sass */
+#leftmost {
+  display: inline;
+  float: left;
+  width: 74.576%;
+  margin-right: 1.695%;
+}
+
+/* line 50, content/s/screen.sass */
+#sitetitle {
+  display: inline;
+  float: left;
+  width: 100%;
+  margin-right: 2.273%;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+/* line 56, content/s/screen.sass */
+#sitetitle #splendorr {
+  font-size: 3em;
+  line-height: 1em;
+  padding: 24px 24px 0px 24px;
+}
+/* line 59, content/s/screen.sass */
+#sitetitle #subtitorr {
+  font-size: 1.5em;
+  line-height: 1em;
+  margin-left: 8em;
+  padding-bottom: 16px;
+}
+
+/* line 64, content/s/screen.sass */
+#toc {
+  display: inline;
+  float: left;
+  width: 88.636%;
+  margin-right: 2.273%;
+  padding-left: 11.364%;
+  margin-top: 1em;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+/* line 73, content/s/screen.sass */
+.toctitle {
+  font-size: 1.875em;
+  line-height: 1.6em;
+  font-style: italic;
+}
+
+/* line 76, content/s/screen.sass */
+.tocheader {
+  font-size: 1.5em;
+  line-height: 1em;
+  padding-left: 16px;
+}
+
+/* line 80, content/s/screen.sass */
+#rightmost {
+  display: inline;
+  float: left;
+  width: 23.729%;
+  margin-right: 1.695%;
+  display: inline;
+  float: right;
+  margin-right: 0;
+  /* ugly hacks for IE6-7 */
+  #margin-left: -1em;
+  background-color: rgba(0, 0, 0, 0.25);
 }
