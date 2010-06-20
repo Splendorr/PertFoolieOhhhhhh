@@ -1,6 +1,6 @@
-/* Welcome to Susy. Use this file to define screen styles.
+/* Welcome to Susy. Use this file to define print styles.
  * Import this file using the following HTML or equivalent:
- * <link href="/stylesheets/screen.css" media="screen" rel="stylesheet" type="text/css" /> */
+ * <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" /> */
 /* Reset --------------------------------------------------------------*/
 /* line 14, /usr/local/lib/ruby/gems/1.9.1/gems/compass-0.10.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
@@ -340,36 +340,26 @@ textarea, input:not([type="radio"]) {
   width: 100%;
 }
 
-/* line 29, /usr/local/lib/ruby/gems/1.9.1/gems/compass-susy-plugin-0.7.0/sass/susy/././_vertical_rhythm.scss */
+/* line 12, content/s/print.sass */
+nav {
+  display: none;
+}
+
+/* line 15, content/s/print.sass */
+* {
+  float: none !important;
+  background: none;
+}
+
+/* line 19, content/s/print.sass */
 body {
-  font-size: 100%;
-  line-height: 1.5em;
+  font-family: "Adobe Caslon Pro", Caslon, Baskerville, Palatino, "Palatino Linotype", "Hoefler Text", Garamond, "URW Palladio L", "Book Antiqua", Georgia, serif;
+  font-size: 12pt;
+  background: white;
+  color: black;
 }
 
-/* line 33, /usr/local/lib/ruby/gems/1.9.1/gems/compass-susy-plugin-0.7.0/sass/susy/././_vertical_rhythm.scss */
-html > body {
-  font-size: 16px;
-}
-
-/* line 18, /usr/local/lib/ruby/gems/1.9.1/gems/compass-susy-plugin-0.7.0/sass/susy/_susy.scss */
-body {
-  text-align: center;
-}
-
-/* line 14, content/s/screen.sass */
-#page {
-  overflow: hidden;
-  display: inline-block;
-  text-align: left;
-  margin-left: auto;
-  margin-right: auto;
-  width: 61em;
-  max-width: 100%;
-  background-image: url('/i/grid.png');
-  background-repeat: repeat;
-  background-position: 1em 0;
-}
-/* line 8, /usr/local/lib/ruby/gems/1.9.1/gems/compass-0.10.2/frameworks/compass/stylesheets/compass/utilities/general/./_hacks.scss */
-#page {
-  display: block;
+/* line 24, content/s/print.sass */
+a:link:after, a:visited:after {
+  content: " (" attr(href) ") ";
 }
