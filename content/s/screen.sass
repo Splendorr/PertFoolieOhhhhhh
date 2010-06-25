@@ -39,6 +39,9 @@ body
   background-color: $bgred
   color: $white
   
+img
+  max-width: 100%
+  
 #fullwidth
   +columns(12)
   +omega
@@ -137,22 +140,89 @@ body
   margin-top: -$sepheight
   border-bottom: solid $sepheight $sepcolor
   
-#leftistshowcase
+@mixin showcase
   +columns(7,12)
   +leader(1, 16px)
-  margin: 0px -$sepheight 0px -$sepheight
-  border: solid $sepheight rgba(255, 255, 255, 0.4)
-  height: 300px
+  //align: center
+  //+alpha
+  //margin-left: -$sepheight 
+  //margin-right: -$sepheight
+  //border: solid $sepheight rgba(255, 255, 255, 0.4)
+  //height: 300px
   
-#leftistdescrip
+@mixin descrip
   +columns(5,12)
   +leader(1, 16px)
+  //margin-left: -$sepheight 
+  //margin-right: -$sepheight
+  //border: solid $sepheight rgba(255, 255, 255, 0.4)
+  //height: 400px
+  
+  p
+    +adjust-font-size-to(24px)
+    +leader(1, 24px)
+    //width: 22em
+    //margin-left: 0em
+    //margin-right: 1em
+    //border: solid $sepheight rgba(255, 255, 255, 0.4)
+  
+#leftistshowcase
+  +showcase
+  
+  #imgplaceholder
+    max-width: 32em
+    margin-left: 1em
+    margin-right: 0em
+    border: solid $sepheight rgba(255, 255, 255, 0.4)
+    height: 300px
+    background: blue
+  
+#leftistdescrip
+  +descrip
   +omega(12)
-  border: solid $sepheight rgba(255, 255, 255, 0.4)
-  height: 400px
+  
+  p
+    margin-right: 1em
+  
+  #entryheader
+    margin-right: 1em
+  
+#rightmongerdescrip
+  +descrip
+  
+  p
+    margin-left: 1em
+    
+  #entryheader
+    margin-left: 1em
+    
+
+  
+#rightmongershowcase
+  +showcase
+  +omega(12)
+  
+  #imgplaceholder
+    max-width: 32em
+    margin-left: 0em
+    margin-right: 1em
+    border: solid $sepheight rgba(255, 255, 255, 0.4)
+    height: 300px
+    background: blue
+
+    
+//#entryheader
+  margin-right: 1em
+  
   
 .gpm
   background: url(/i/gpmbg.png) repeat-y
-  opacity: 0.8
+  //opacity: 0.8
   z-index: 195
-  height: 600px
+  //height: 600px
+  padding-bottom: 2em
+  
+.gpm2test
+  z-index: 190
+  background: url(/i/gpmbg.png) repeat-y
+  padding-bottom: 2em

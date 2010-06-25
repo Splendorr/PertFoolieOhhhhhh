@@ -381,6 +381,11 @@ body {
 }
 
 /* line 42, content/s/screen.sass */
+img {
+  max-width: 100%;
+}
+
+/* line 45, content/s/screen.sass */
 #fullwidth {
   display: inline;
   float: left;
@@ -393,7 +398,7 @@ body {
   #margin-left: -1em;
 }
 
-/* line 50, content/s/screen.sass */
+/* line 53, content/s/screen.sass */
 #leftmost {
   display: inline;
   float: left;
@@ -401,7 +406,7 @@ body {
   margin-right: 1.695%;
 }
 
-/* line 53, content/s/screen.sass */
+/* line 56, content/s/screen.sass */
 #sitetitle {
   display: inline;
   float: left;
@@ -409,13 +414,13 @@ body {
   margin-right: 2.273%;
   background-color: rgba(0, 0, 0, 0.25);
 }
-/* line 59, content/s/screen.sass */
+/* line 62, content/s/screen.sass */
 #sitetitle #splendorr {
   font-size: 3em;
   line-height: 1em;
   padding: 24px 24px 0px 24px;
 }
-/* line 62, content/s/screen.sass */
+/* line 65, content/s/screen.sass */
 #sitetitle #subtitorr {
   font-size: 1.5em;
   line-height: 1em;
@@ -423,7 +428,7 @@ body {
   padding-bottom: 16px;
 }
 
-/* line 67, content/s/screen.sass */
+/* line 70, content/s/screen.sass */
 #toc {
   display: inline;
   float: left;
@@ -436,21 +441,21 @@ body {
   background-color: rgba(0, 0, 0, 0.25);
 }
 
-/* line 76, content/s/screen.sass */
+/* line 79, content/s/screen.sass */
 .toctitle {
   font-size: 1.875em;
   line-height: 1.6em;
   font-style: italic;
 }
 
-/* line 79, content/s/screen.sass */
+/* line 82, content/s/screen.sass */
 .tocheader {
   font-size: 1.5em;
   line-height: 1em;
   padding-left: 16px;
 }
 
-/* line 83, content/s/screen.sass */
+/* line 86, content/s/screen.sass */
 #rightmost {
   display: inline;
   float: left;
@@ -464,7 +469,7 @@ body {
   background-color: rgba(0, 0, 0, 0.25);
 }
 
-/* line 90, content/s/screen.sass */
+/* line 93, content/s/screen.sass */
 #fartherbutton {
   position: relative;
   z-index: 5;
@@ -473,12 +478,12 @@ body {
   text-align: center;
   background-color: blue;
 }
-/* line 101, content/s/screen.sass */
+/* line 104, content/s/screen.sass */
 #fartherbutton:hover, #fartherbutton:focus {
   background-color: green;
 }
 
-/* line 105, content/s/screen.sass */
+/* line 108, content/s/screen.sass */
 #closerbutton {
   position: relative;
   top: -150px;
@@ -489,12 +494,12 @@ body {
   text-align: center;
   background-color: red;
 }
-/* line 118, content/s/screen.sass */
+/* line 121, content/s/screen.sass */
 #closerbutton:hover, #closerbutton:focus {
   background-color: purple;
 }
 
-/* line 124, content/s/screen.sass */
+/* line 127, content/s/screen.sass */
 #headerspace {
   position: relative;
   display: inline;
@@ -512,7 +517,7 @@ body {
   z-index: 200;
 }
 
-/* line 133, content/s/screen.sass */
+/* line 136, content/s/screen.sass */
 #entry {
   position: relative;
   display: inline;
@@ -528,19 +533,25 @@ body {
   border-bottom: solid 6px rgba(0, 0, 0, 0.2);
 }
 
-/* line 140, content/s/screen.sass */
+/* line 169, content/s/screen.sass */
 #leftistshowcase {
   display: inline;
   float: left;
   width: 57.627%;
   margin-right: 1.695%;
   margin-top: 1.5em;
-  margin: -6px -6px;
+}
+/* line 172, content/s/screen.sass */
+#leftistshowcase #imgplaceholder {
+  max-width: 32em;
+  margin-left: 1em;
+  margin-right: 0em;
   border: solid 6px rgba(255, 255, 255, 0.4);
   height: 300px;
+  background: blue;
 }
 
-/* line 147, content/s/screen.sass */
+/* line 180, content/s/screen.sass */
 #leftistdescrip {
   display: inline;
   float: left;
@@ -552,14 +563,78 @@ body {
   margin-right: 0;
   /* ugly hacks for IE6-7 */
   #margin-left: -1em;
-  border: solid 6px rgba(255, 255, 255, 0.4);
-  height: 400px;
+}
+/* line 161, content/s/screen.sass */
+#leftistdescrip p {
+  font-size: 1.5em;
+  line-height: 1em;
+  margin-top: 1em;
+}
+/* line 184, content/s/screen.sass */
+#leftistdescrip p {
+  margin-right: 1em;
+}
+/* line 187, content/s/screen.sass */
+#leftistdescrip #entryheader {
+  margin-right: 1em;
 }
 
-/* line 154, content/s/screen.sass */
+/* line 190, content/s/screen.sass */
+#rightmongerdescrip {
+  display: inline;
+  float: left;
+  width: 40.678%;
+  margin-right: 1.695%;
+  margin-top: 1.5em;
+}
+/* line 161, content/s/screen.sass */
+#rightmongerdescrip p {
+  font-size: 1.5em;
+  line-height: 1em;
+  margin-top: 1em;
+}
+/* line 193, content/s/screen.sass */
+#rightmongerdescrip p {
+  margin-left: 1em;
+}
+/* line 196, content/s/screen.sass */
+#rightmongerdescrip #entryheader {
+  margin-left: 1em;
+}
+
+/* line 201, content/s/screen.sass */
+#rightmongershowcase {
+  display: inline;
+  float: left;
+  width: 57.627%;
+  margin-right: 1.695%;
+  margin-top: 1.5em;
+  display: inline;
+  float: right;
+  margin-right: 0;
+  /* ugly hacks for IE6-7 */
+  #margin-left: -1em;
+}
+/* line 205, content/s/screen.sass */
+#rightmongershowcase #imgplaceholder {
+  max-width: 32em;
+  margin-left: 0em;
+  margin-right: 1em;
+  border: solid 6px rgba(255, 255, 255, 0.4);
+  height: 300px;
+  background: blue;
+}
+
+/* line 218, content/s/screen.sass */
 .gpm {
   background: url(/i/gpmbg.png) repeat-y;
-  opacity: 0.8;
   z-index: 195;
-  height: 600px;
+  padding-bottom: 2em;
+}
+
+/* line 225, content/s/screen.sass */
+.gpm2test {
+  z-index: 190;
+  background: url(/i/gpmbg.png) repeat-y;
+  padding-bottom: 2em;
 }
