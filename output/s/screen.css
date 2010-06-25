@@ -365,9 +365,6 @@ body {
   margin-right: auto;
   width: 61em;
   max-width: 100%;
-  background-image: url('/i/grid.png');
-  background-repeat: repeat;
-  background-position: 1em 0;
 }
 /* line 8, /usr/local/lib/ruby/gems/1.9.1/gems/compass-0.10.2/frameworks/compass/stylesheets/compass/utilities/general/./_hacks.scss */
 #page {
@@ -511,7 +508,7 @@ img {
   margin-right: 1.639%;
   /* ugly hacks for IE6-7 */
   #margin-left: -1em;
-  background: url(/i/headertemp.jpg) no-repeat;
+  background: url(../i/headertemp.jpg) no-repeat;
   height: 271px;
   border-bottom: solid 6px rgba(0, 0, 0, 0.2);
   z-index: 200;
@@ -627,7 +624,7 @@ img {
 
 /* line 218, content/s/screen.sass */
 .gpm {
-  background: url(/i/gpmbg.png) repeat-y;
+  background: url(../i/gpmbg.png) repeat-y;
   z-index: 195;
   padding-bottom: 2em;
 }
@@ -635,6 +632,6 @@ img {
 /* line 225, content/s/screen.sass */
 .gpm2test {
   z-index: 190;
-  background: url(/i/gpmbg.png) repeat-y;
+  background: url(../i/gpmbg.png) repeat-y;
   padding-bottom: 2em;
 }

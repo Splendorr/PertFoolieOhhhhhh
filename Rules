@@ -18,6 +18,7 @@ Compass.add_project_configuration('config.rb')
 
 compile '/s/*/' do
   filter :sass, Compass.sass_engine_options
+  filter :relativize_paths, :type => :css
 end
 
 compile '*' do
