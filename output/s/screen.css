@@ -365,19 +365,22 @@ body {
   margin-right: auto;
   width: 61em;
   max-width: 100%;
+  background-image: url('/i/grid.png');
+  background-repeat: repeat;
+  background-position: 1em 0;
 }
 /* line 8, /usr/local/lib/ruby/gems/1.9.1/gems/compass-0.10.2/frameworks/compass/stylesheets/compass/utilities/general/./_hacks.scss */
 #page {
   display: block;
 }
 
-/* line 35, content/s/screen.sass */
+/* line 38, content/s/screen.sass */
 body {
   background-color: #3b000b;
   color: white;
 }
 
-/* line 39, content/s/screen.sass */
+/* line 42, content/s/screen.sass */
 #fullwidth {
   display: inline;
   float: left;
@@ -388,10 +391,9 @@ body {
   margin-right: 1.639%;
   /* ugly hacks for IE6-7 */
   #margin-left: -1em;
-  margin-top: 1em;
 }
 
-/* line 47, content/s/screen.sass */
+/* line 50, content/s/screen.sass */
 #leftmost {
   display: inline;
   float: left;
@@ -399,7 +401,7 @@ body {
   margin-right: 1.695%;
 }
 
-/* line 50, content/s/screen.sass */
+/* line 53, content/s/screen.sass */
 #sitetitle {
   display: inline;
   float: left;
@@ -407,13 +409,13 @@ body {
   margin-right: 2.273%;
   background-color: rgba(0, 0, 0, 0.25);
 }
-/* line 56, content/s/screen.sass */
+/* line 59, content/s/screen.sass */
 #sitetitle #splendorr {
   font-size: 3em;
   line-height: 1em;
   padding: 24px 24px 0px 24px;
 }
-/* line 59, content/s/screen.sass */
+/* line 62, content/s/screen.sass */
 #sitetitle #subtitorr {
   font-size: 1.5em;
   line-height: 1em;
@@ -421,7 +423,7 @@ body {
   padding-bottom: 16px;
 }
 
-/* line 64, content/s/screen.sass */
+/* line 67, content/s/screen.sass */
 #toc {
   display: inline;
   float: left;
@@ -434,21 +436,21 @@ body {
   background-color: rgba(0, 0, 0, 0.25);
 }
 
-/* line 73, content/s/screen.sass */
+/* line 76, content/s/screen.sass */
 .toctitle {
   font-size: 1.875em;
   line-height: 1.6em;
   font-style: italic;
 }
 
-/* line 76, content/s/screen.sass */
+/* line 79, content/s/screen.sass */
 .tocheader {
   font-size: 1.5em;
   line-height: 1em;
   padding-left: 16px;
 }
 
-/* line 80, content/s/screen.sass */
+/* line 83, content/s/screen.sass */
 #rightmost {
   display: inline;
   float: left;
@@ -460,4 +462,104 @@ body {
   /* ugly hacks for IE6-7 */
   #margin-left: -1em;
   background-color: rgba(0, 0, 0, 0.25);
+}
+
+/* line 90, content/s/screen.sass */
+#fartherbutton {
+  position: relative;
+  z-index: 5;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  background-color: blue;
+}
+/* line 101, content/s/screen.sass */
+#fartherbutton:hover, #fartherbutton:focus {
+  background-color: green;
+}
+
+/* line 105, content/s/screen.sass */
+#closerbutton {
+  position: relative;
+  top: -150px;
+  left: 50px;
+  z-index: 10;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  background-color: red;
+}
+/* line 118, content/s/screen.sass */
+#closerbutton:hover, #closerbutton:focus {
+  background-color: purple;
+}
+
+/* line 124, content/s/screen.sass */
+#headerspace {
+  position: relative;
+  display: inline;
+  float: left;
+  width: 96.721%;
+  margin-right: 1.639%;
+  display: inline;
+  float: right;
+  margin-right: 1.639%;
+  /* ugly hacks for IE6-7 */
+  #margin-left: -1em;
+  background: url(/i/headertemp.jpg) no-repeat;
+  height: 271px;
+  border-bottom: solid 6px rgba(0, 0, 0, 0.2);
+  z-index: 200;
+}
+
+/* line 133, content/s/screen.sass */
+#entry {
+  position: relative;
+  display: inline;
+  float: left;
+  width: 96.721%;
+  margin-right: 1.639%;
+  display: inline;
+  float: right;
+  margin-right: 1.639%;
+  /* ugly hacks for IE6-7 */
+  #margin-left: -1em;
+  margin-top: -6px;
+  border-bottom: solid 6px rgba(0, 0, 0, 0.2);
+}
+
+/* line 140, content/s/screen.sass */
+#leftistshowcase {
+  display: inline;
+  float: left;
+  width: 57.627%;
+  margin-right: 1.695%;
+  margin-top: 1.5em;
+  margin: -6px -6px;
+  border: solid 6px rgba(255, 255, 255, 0.4);
+  height: 300px;
+}
+
+/* line 147, content/s/screen.sass */
+#leftistdescrip {
+  display: inline;
+  float: left;
+  width: 40.678%;
+  margin-right: 1.695%;
+  margin-top: 1.5em;
+  display: inline;
+  float: right;
+  margin-right: 0;
+  /* ugly hacks for IE6-7 */
+  #margin-left: -1em;
+  border: solid 6px rgba(255, 255, 255, 0.4);
+  height: 400px;
+}
+
+/* line 154, content/s/screen.sass */
+.gpm {
+  background: url(/i/gpmbg.png) repeat-y;
+  opacity: 0.8;
+  z-index: 195;
+  height: 600px;
 }
