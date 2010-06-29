@@ -14,7 +14,10 @@
 // change '#page' to match your HTML container element(s)
 #page
   +container
-  //+show-grid("grid.png")
+  +show-grid("grid.png")
+  
+#page
+  overflow: visible
 
 // show-grid loads a 64+16x24 grid image by default
 // For other grid settings, run `compass grid-img 30+10x20`
@@ -34,11 +37,16 @@ $bgred      : #3b000b
 $sepheight  : 6px
 $sepcolor   : rgba(0, 0, 0, 0.2)
 
+$teal       : #0c2832
+$bgteal     : rgba(12, 39, 50, 0.8)
+$bghoverteal: rgba(16, 63, 83, 0.8)
+
 // General Styles
 
 body
-  background-color: black
-  color: $white
+  background-color: $white
+  background: url(/i/noisebg.png) repeat
+  color: $teal
   
 img
   max-width: 100%
@@ -140,6 +148,9 @@ img
   +omega
   margin-top: -$sepheight
   border-bottom: solid $sepheight $sepcolor
+  //margin-left: -1em
+  padding-left: 1em
+  overflow: visible
   
 @mixin showcase
   +columns(7,12)
@@ -160,19 +171,26 @@ img
   //height: 400px
   
   p
-    +adjust-font-size-to(24px)
+    //+adjust-font-size-to(24px)
     +leader(1, 24px)
+    padding-right: 1em
     //width: 22em
     //margin-left: 0em
     //margin-right: 1em
     //border: solid $sepheight rgba(255, 255, 255, 0.4)
+    
+  h1
+    +adjust-font-size-to(24px)
+  
+  .scriphead
+    +adjust-font-size-to(24px)
   
 #leftistshowcase
   +showcase
   
   #imgplaceholder
     max-width: 32em
-    margin-left: 1em
+    //margin-left: 1em
     margin-right: 0em
     border: solid $sepheight rgba(255, 255, 255, 0.4)
     height: 300px
@@ -183,10 +201,10 @@ img
   +omega(12)
   
   p
-    margin-right: 1em
+    //margin-right: 1em
   
   #entryheader
-    margin-right: 1em
+    //margin-right: 1em
   
 #rightmongerdescrip
   +descrip
@@ -217,14 +235,16 @@ img
   
   
 .gpm
-  background: url(/i/gpmbg.png) repeat-y
+  background: url(/i/gpmbg.png) repeat
   //opacity: 0.8
   z-index: 195
   //height: 600px
   padding-bottom: 2em
+  color: $white
 
 .gpmbg
   background-color: purple
+  background: url(/i/gpmbg.png) repeat
   
 .gpm2test
   z-index: 190
@@ -233,3 +253,40 @@ img
   
 //Pertclock3 Styles
 
+#realfull
+  +full
+
+#leftcol
+  +columns(5, 12)
+  +leader(3, 16px)
+  //+alpha
+  //overflow: display
+  color: $teal
+  
+.splenhead
+  //background: rgba(37, 83, 119, 0.7)
+  background: $bgteal
+  //background: url(/i/icebanner.jpg) no-repeat right top
+  margin-left: -90em
+  padding-left: 90em
+  //margin-left: -3em
+  //padding-left: 3em
+  padding-right: 1em
+  //margin-top: -90em
+  //padding-top: 90em
+  padding-top: 1.25em
+  padding-bottom: 1em
+  //+rhythm-borders(4px)
+  
+  -moz-transition-property: all
+  -webkit-transition-property: all
+  -o-transition-property: all
+  transition-property: all
+  -moz-transition-duration: 0.2s
+  -webkit-transition-duration: 0.2s
+  -o-transition-duration: 0.2s
+  transition-duration: 0.2s
+  
+  &:hover, &:focus
+    background-color: $bghoverteal
+    

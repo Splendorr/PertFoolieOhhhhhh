@@ -540,39 +540,48 @@ body {
   text-align: left;
   margin-left: auto;
   margin-right: auto;
-  width: 61em;
+  width: 63em;
   max-width: 100%;
+  background-image: url('../i/grid.png');
+  background-repeat: repeat;
+  background-position: 2em 0;
 }
 /* line 8, /usr/local/lib/ruby/gems/1.9.1/gems/compass-0.10.2/frameworks/compass/stylesheets/compass/utilities/general/./_hacks.scss */
 #page {
   display: block;
 }
 
-/* line 39, content/s/screen.sass */
-body {
-  background-color: black;
-  color: white;
+/* line 19, content/s/screen.sass */
+#page {
+  overflow: visible;
 }
 
-/* line 43, content/s/screen.sass */
+/* line 46, content/s/screen.sass */
+body {
+  background-color: white;
+  background: url(../i/noisebg.png) repeat;
+  color: #0c2832;
+}
+
+/* line 51, content/s/screen.sass */
 img {
   max-width: 100%;
 }
 
-/* line 46, content/s/screen.sass */
+/* line 54, content/s/screen.sass */
 #fullwidth {
   display: inline;
   float: left;
-  width: 96.721%;
-  margin-right: 1.639%;
+  width: 93.651%;
+  margin-right: 1.587%;
   display: inline;
   float: right;
-  margin-right: 1.639%;
+  margin-right: 3.175%;
   /* ugly hacks for IE6-7 */
   #margin-left: -1em;
 }
 
-/* line 54, content/s/screen.sass */
+/* line 62, content/s/screen.sass */
 #leftmost {
   display: inline;
   float: left;
@@ -580,7 +589,7 @@ img {
   margin-right: 1.695%;
 }
 
-/* line 57, content/s/screen.sass */
+/* line 65, content/s/screen.sass */
 #sitetitle {
   display: inline;
   float: left;
@@ -588,13 +597,13 @@ img {
   margin-right: 2.273%;
   background-color: rgba(0, 0, 0, 0.25);
 }
-/* line 63, content/s/screen.sass */
+/* line 71, content/s/screen.sass */
 #sitetitle #splendorr {
   font-size: 3em;
   line-height: 1em;
   padding: 24px 24px 0px 24px;
 }
-/* line 66, content/s/screen.sass */
+/* line 74, content/s/screen.sass */
 #sitetitle #subtitorr {
   font-size: 1.5em;
   line-height: 1em;
@@ -602,7 +611,7 @@ img {
   padding-bottom: 16px;
 }
 
-/* line 71, content/s/screen.sass */
+/* line 79, content/s/screen.sass */
 #toc {
   display: inline;
   float: left;
@@ -615,21 +624,21 @@ img {
   background-color: rgba(0, 0, 0, 0.25);
 }
 
-/* line 80, content/s/screen.sass */
+/* line 88, content/s/screen.sass */
 .toctitle {
   font-size: 1.875em;
   line-height: 1.6em;
   font-style: italic;
 }
 
-/* line 83, content/s/screen.sass */
+/* line 91, content/s/screen.sass */
 .tocheader {
   font-size: 1.5em;
   line-height: 1em;
   padding-left: 16px;
 }
 
-/* line 87, content/s/screen.sass */
+/* line 95, content/s/screen.sass */
 #rightmost {
   display: inline;
   float: left;
@@ -643,7 +652,7 @@ img {
   background-color: rgba(0, 0, 0, 0.25);
 }
 
-/* line 94, content/s/screen.sass */
+/* line 102, content/s/screen.sass */
 #fartherbutton {
   position: relative;
   z-index: 5;
@@ -652,12 +661,12 @@ img {
   text-align: center;
   background-color: blue;
 }
-/* line 105, content/s/screen.sass */
+/* line 113, content/s/screen.sass */
 #fartherbutton:hover, #fartherbutton:focus {
   background-color: green;
 }
 
-/* line 109, content/s/screen.sass */
+/* line 117, content/s/screen.sass */
 #closerbutton {
   position: relative;
   top: -150px;
@@ -668,21 +677,21 @@ img {
   text-align: center;
   background-color: red;
 }
-/* line 122, content/s/screen.sass */
+/* line 130, content/s/screen.sass */
 #closerbutton:hover, #closerbutton:focus {
   background-color: purple;
 }
 
-/* line 128, content/s/screen.sass */
+/* line 136, content/s/screen.sass */
 #headerspace {
   position: relative;
   display: inline;
   float: left;
-  width: 96.721%;
-  margin-right: 1.639%;
+  width: 93.651%;
+  margin-right: 1.587%;
   display: inline;
   float: right;
-  margin-right: 1.639%;
+  margin-right: 3.175%;
   /* ugly hacks for IE6-7 */
   #margin-left: -1em;
   background: url(../i/headertemp.jpg) no-repeat;
@@ -691,23 +700,25 @@ img {
   z-index: 200;
 }
 
-/* line 137, content/s/screen.sass */
+/* line 145, content/s/screen.sass */
 #entry {
   position: relative;
   display: inline;
   float: left;
-  width: 96.721%;
-  margin-right: 1.639%;
+  width: 93.651%;
+  margin-right: 1.587%;
   display: inline;
   float: right;
-  margin-right: 1.639%;
+  margin-right: 3.175%;
   /* ugly hacks for IE6-7 */
   #margin-left: -1em;
   margin-top: -6px;
   border-bottom: solid 6px rgba(0, 0, 0, 0.2);
+  padding-left: 1em;
+  overflow: visible;
 }
 
-/* line 170, content/s/screen.sass */
+/* line 188, content/s/screen.sass */
 #leftistshowcase {
   display: inline;
   float: left;
@@ -715,17 +726,16 @@ img {
   margin-right: 1.695%;
   margin-top: 1.5em;
 }
-/* line 173, content/s/screen.sass */
+/* line 191, content/s/screen.sass */
 #leftistshowcase #imgplaceholder {
   max-width: 32em;
-  margin-left: 1em;
   margin-right: 0em;
   border: solid 6px rgba(255, 255, 255, 0.4);
   height: 300px;
   background: #f5f5d8;
 }
 
-/* line 181, content/s/screen.sass */
+/* line 199, content/s/screen.sass */
 #leftistdescrip {
   display: inline;
   float: left;
@@ -738,22 +748,23 @@ img {
   /* ugly hacks for IE6-7 */
   #margin-left: -1em;
 }
-/* line 162, content/s/screen.sass */
+/* line 173, content/s/screen.sass */
 #leftistdescrip p {
+  margin-top: 1em;
+  padding-right: 1em;
+}
+/* line 182, content/s/screen.sass */
+#leftistdescrip h1 {
   font-size: 1.5em;
   line-height: 1em;
-  margin-top: 1em;
 }
 /* line 185, content/s/screen.sass */
-#leftistdescrip p {
-  margin-right: 1em;
-}
-/* line 188, content/s/screen.sass */
-#leftistdescrip #entryheader {
-  margin-right: 1em;
+#leftistdescrip .scriphead {
+  font-size: 1.5em;
+  line-height: 1em;
 }
 
-/* line 191, content/s/screen.sass */
+/* line 209, content/s/screen.sass */
 #rightmongerdescrip {
   display: inline;
   float: left;
@@ -761,22 +772,31 @@ img {
   margin-right: 1.695%;
   margin-top: 1.5em;
 }
-/* line 162, content/s/screen.sass */
+/* line 173, content/s/screen.sass */
 #rightmongerdescrip p {
+  margin-top: 1em;
+  padding-right: 1em;
+}
+/* line 182, content/s/screen.sass */
+#rightmongerdescrip h1 {
   font-size: 1.5em;
   line-height: 1em;
-  margin-top: 1em;
 }
-/* line 194, content/s/screen.sass */
+/* line 185, content/s/screen.sass */
+#rightmongerdescrip .scriphead {
+  font-size: 1.5em;
+  line-height: 1em;
+}
+/* line 212, content/s/screen.sass */
 #rightmongerdescrip p {
   margin-left: 1em;
 }
-/* line 197, content/s/screen.sass */
+/* line 215, content/s/screen.sass */
 #rightmongerdescrip #entryheader {
   margin-left: 1em;
 }
 
-/* line 202, content/s/screen.sass */
+/* line 220, content/s/screen.sass */
 #rightmongershowcase {
   display: inline;
   float: left;
@@ -789,7 +809,7 @@ img {
   /* ugly hacks for IE6-7 */
   #margin-left: -1em;
 }
-/* line 206, content/s/screen.sass */
+/* line 224, content/s/screen.sass */
 #rightmongershowcase #imgplaceholder {
   max-width: 32em;
   margin-left: 0em;
@@ -799,21 +819,62 @@ img {
   background: #f5f5d8;
 }
 
-/* line 219, content/s/screen.sass */
+/* line 237, content/s/screen.sass */
 .gpm {
-  background: url(../i/gpmbg.png) repeat-y;
+  background: url(../i/gpmbg.png) repeat;
   z-index: 195;
   padding-bottom: 2em;
+  color: white;
 }
 
-/* line 226, content/s/screen.sass */
+/* line 245, content/s/screen.sass */
 .gpmbg {
   background-color: purple;
+  background: url(../i/gpmbg.png) repeat;
 }
 
-/* line 229, content/s/screen.sass */
+/* line 249, content/s/screen.sass */
 .gpm2test {
   z-index: 190;
   background: url(../i/gpmbg.png) repeat-y;
   padding-bottom: 2em;
+}
+
+/* line 256, content/s/screen.sass */
+#realfull {
+  clear: both;
+  margin-right: 3.175%;
+  margin-left: 3.175%;
+}
+
+/* line 259, content/s/screen.sass */
+#leftcol {
+  display: inline;
+  float: left;
+  width: 40.678%;
+  margin-right: 1.695%;
+  margin-top: 4.5em;
+  color: #0c2832;
+}
+
+/* line 266, content/s/screen.sass */
+.splenhead {
+  background: rgba(12, 39, 50, 0.8);
+  margin-left: -90em;
+  padding-left: 90em;
+  padding-right: 1em;
+  padding-top: 1.25em;
+  padding-bottom: 1em;
+  -moz-transition-property: all;
+  -webkit-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -moz-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+}
+/* line 290, content/s/screen.sass */
+.splenhead:hover, .splenhead:focus {
+  background-color: rgba(16, 63, 83, 0.8);
 }
