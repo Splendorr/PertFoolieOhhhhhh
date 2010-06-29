@@ -340,6 +340,183 @@ textarea, input:not([type="radio"]) {
   width: 100%;
 }
 
+/* line 17, content/s/./_wheel.scss */
+#sss {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -250px 0 0 -250px;
+  height: 500px;
+  width: 500px;
+  z-index: 5;
+  border: none;
+  overflow: hidden;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-name: spin;
+  -webkit-animation-duration: 10s;
+}
+
+/* line 25, content/s/./_wheel.scss */
+#ppp {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -250px 0 0 -250px;
+  height: 500px;
+  width: 500px;
+  z-index: 5;
+  border: none;
+  overflow: hidden;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-name: spin;
+  -webkit-animation-duration: 14s;
+}
+
+/* line 33, content/s/./_wheel.scss */
+#lll {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -250px 0 0 -250px;
+  height: 500px;
+  width: 500px;
+  z-index: 5;
+  border: none;
+  overflow: hidden;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-name: spinneg;
+  -webkit-animation-duration: 15s;
+}
+
+/* line 41, content/s/./_wheel.scss */
+#eee {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -250px 0 0 -250px;
+  height: 500px;
+  width: 500px;
+  z-index: 5;
+  border: none;
+  overflow: hidden;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-name: spin;
+  -webkit-animation-duration: 20s;
+}
+
+/* line 49, content/s/./_wheel.scss */
+#nnn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -250px 0 0 -250px;
+  height: 500px;
+  width: 500px;
+  z-index: 5;
+  border: none;
+  overflow: hidden;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-name: spinneg;
+  -webkit-animation-duration: 12s;
+}
+
+/* line 57, content/s/./_wheel.scss */
+#ddd {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -250px 0 0 -250px;
+  height: 500px;
+  width: 500px;
+  z-index: 5;
+  border: none;
+  overflow: hidden;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-name: spinneg;
+  -webkit-animation-duration: 16s;
+}
+
+/* line 65, content/s/./_wheel.scss */
+#ooo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -250px 0 0 -250px;
+  height: 500px;
+  width: 500px;
+  z-index: 5;
+  border: none;
+  overflow: hidden;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-name: spin;
+  -webkit-animation-duration: 18s;
+}
+
+/* line 73, content/s/./_wheel.scss */
+#rr1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -250px 0 0 -250px;
+  height: 500px;
+  width: 500px;
+  z-index: 5;
+  border: none;
+  overflow: hidden;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-name: spinneg;
+  -webkit-animation-duration: 11s;
+}
+
+/* line 81, content/s/./_wheel.scss */
+#rr2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -250px 0 0 -250px;
+  height: 500px;
+  width: 500px;
+  z-index: 5;
+  border: none;
+  overflow: hidden;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-name: spin;
+  -webkit-animation-duration: 24s;
+}
+
+@-webkit-keyframes spin {
+  /* line 90, content/s/./_wheel.scss */
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+
+  /* line 91, content/s/./_wheel.scss */
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes spinneg {
+  /* line 95, content/s/./_wheel.scss */
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+
+  /* line 96, content/s/./_wheel.scss */
+  100% {
+    -webkit-transform: rotate(-360deg);
+  }
+}
+
 /* line 29, /usr/local/lib/ruby/gems/1.9.1/gems/compass-susy-plugin-0.7.0/sass/susy/././_vertical_rhythm.scss */
 body {
   font-size: 100%;
@@ -356,7 +533,7 @@ body {
   text-align: center;
 }
 
-/* line 14, content/s/screen.sass */
+/* line 15, content/s/screen.sass */
 #page {
   overflow: hidden;
   display: inline-block;
@@ -371,18 +548,18 @@ body {
   display: block;
 }
 
-/* line 38, content/s/screen.sass */
+/* line 39, content/s/screen.sass */
 body {
-  background-color: #3b000b;
+  background-color: black;
   color: white;
 }
 
-/* line 42, content/s/screen.sass */
+/* line 43, content/s/screen.sass */
 img {
   max-width: 100%;
 }
 
-/* line 45, content/s/screen.sass */
+/* line 46, content/s/screen.sass */
 #fullwidth {
   display: inline;
   float: left;
@@ -395,7 +572,7 @@ img {
   #margin-left: -1em;
 }
 
-/* line 53, content/s/screen.sass */
+/* line 54, content/s/screen.sass */
 #leftmost {
   display: inline;
   float: left;
@@ -403,7 +580,7 @@ img {
   margin-right: 1.695%;
 }
 
-/* line 56, content/s/screen.sass */
+/* line 57, content/s/screen.sass */
 #sitetitle {
   display: inline;
   float: left;
@@ -411,13 +588,13 @@ img {
   margin-right: 2.273%;
   background-color: rgba(0, 0, 0, 0.25);
 }
-/* line 62, content/s/screen.sass */
+/* line 63, content/s/screen.sass */
 #sitetitle #splendorr {
   font-size: 3em;
   line-height: 1em;
   padding: 24px 24px 0px 24px;
 }
-/* line 65, content/s/screen.sass */
+/* line 66, content/s/screen.sass */
 #sitetitle #subtitorr {
   font-size: 1.5em;
   line-height: 1em;
@@ -425,7 +602,7 @@ img {
   padding-bottom: 16px;
 }
 
-/* line 70, content/s/screen.sass */
+/* line 71, content/s/screen.sass */
 #toc {
   display: inline;
   float: left;
@@ -438,21 +615,21 @@ img {
   background-color: rgba(0, 0, 0, 0.25);
 }
 
-/* line 79, content/s/screen.sass */
+/* line 80, content/s/screen.sass */
 .toctitle {
   font-size: 1.875em;
   line-height: 1.6em;
   font-style: italic;
 }
 
-/* line 82, content/s/screen.sass */
+/* line 83, content/s/screen.sass */
 .tocheader {
   font-size: 1.5em;
   line-height: 1em;
   padding-left: 16px;
 }
 
-/* line 86, content/s/screen.sass */
+/* line 87, content/s/screen.sass */
 #rightmost {
   display: inline;
   float: left;
@@ -466,7 +643,7 @@ img {
   background-color: rgba(0, 0, 0, 0.25);
 }
 
-/* line 93, content/s/screen.sass */
+/* line 94, content/s/screen.sass */
 #fartherbutton {
   position: relative;
   z-index: 5;
@@ -475,12 +652,12 @@ img {
   text-align: center;
   background-color: blue;
 }
-/* line 104, content/s/screen.sass */
+/* line 105, content/s/screen.sass */
 #fartherbutton:hover, #fartherbutton:focus {
   background-color: green;
 }
 
-/* line 108, content/s/screen.sass */
+/* line 109, content/s/screen.sass */
 #closerbutton {
   position: relative;
   top: -150px;
@@ -491,12 +668,12 @@ img {
   text-align: center;
   background-color: red;
 }
-/* line 121, content/s/screen.sass */
+/* line 122, content/s/screen.sass */
 #closerbutton:hover, #closerbutton:focus {
   background-color: purple;
 }
 
-/* line 127, content/s/screen.sass */
+/* line 128, content/s/screen.sass */
 #headerspace {
   position: relative;
   display: inline;
@@ -514,7 +691,7 @@ img {
   z-index: 200;
 }
 
-/* line 136, content/s/screen.sass */
+/* line 137, content/s/screen.sass */
 #entry {
   position: relative;
   display: inline;
@@ -530,7 +707,7 @@ img {
   border-bottom: solid 6px rgba(0, 0, 0, 0.2);
 }
 
-/* line 169, content/s/screen.sass */
+/* line 170, content/s/screen.sass */
 #leftistshowcase {
   display: inline;
   float: left;
@@ -538,17 +715,17 @@ img {
   margin-right: 1.695%;
   margin-top: 1.5em;
 }
-/* line 172, content/s/screen.sass */
+/* line 173, content/s/screen.sass */
 #leftistshowcase #imgplaceholder {
   max-width: 32em;
   margin-left: 1em;
   margin-right: 0em;
   border: solid 6px rgba(255, 255, 255, 0.4);
   height: 300px;
-  background: blue;
+  background: #f5f5d8;
 }
 
-/* line 180, content/s/screen.sass */
+/* line 181, content/s/screen.sass */
 #leftistdescrip {
   display: inline;
   float: left;
@@ -561,22 +738,22 @@ img {
   /* ugly hacks for IE6-7 */
   #margin-left: -1em;
 }
-/* line 161, content/s/screen.sass */
+/* line 162, content/s/screen.sass */
 #leftistdescrip p {
   font-size: 1.5em;
   line-height: 1em;
   margin-top: 1em;
 }
-/* line 184, content/s/screen.sass */
+/* line 185, content/s/screen.sass */
 #leftistdescrip p {
   margin-right: 1em;
 }
-/* line 187, content/s/screen.sass */
+/* line 188, content/s/screen.sass */
 #leftistdescrip #entryheader {
   margin-right: 1em;
 }
 
-/* line 190, content/s/screen.sass */
+/* line 191, content/s/screen.sass */
 #rightmongerdescrip {
   display: inline;
   float: left;
@@ -584,22 +761,22 @@ img {
   margin-right: 1.695%;
   margin-top: 1.5em;
 }
-/* line 161, content/s/screen.sass */
+/* line 162, content/s/screen.sass */
 #rightmongerdescrip p {
   font-size: 1.5em;
   line-height: 1em;
   margin-top: 1em;
 }
-/* line 193, content/s/screen.sass */
+/* line 194, content/s/screen.sass */
 #rightmongerdescrip p {
   margin-left: 1em;
 }
-/* line 196, content/s/screen.sass */
+/* line 197, content/s/screen.sass */
 #rightmongerdescrip #entryheader {
   margin-left: 1em;
 }
 
-/* line 201, content/s/screen.sass */
+/* line 202, content/s/screen.sass */
 #rightmongershowcase {
   display: inline;
   float: left;
@@ -612,24 +789,29 @@ img {
   /* ugly hacks for IE6-7 */
   #margin-left: -1em;
 }
-/* line 205, content/s/screen.sass */
+/* line 206, content/s/screen.sass */
 #rightmongershowcase #imgplaceholder {
   max-width: 32em;
   margin-left: 0em;
   margin-right: 1em;
   border: solid 6px rgba(255, 255, 255, 0.4);
   height: 300px;
-  background: blue;
+  background: #f5f5d8;
 }
 
-/* line 218, content/s/screen.sass */
+/* line 219, content/s/screen.sass */
 .gpm {
   background: url(../i/gpmbg.png) repeat-y;
   z-index: 195;
   padding-bottom: 2em;
 }
 
-/* line 225, content/s/screen.sass */
+/* line 226, content/s/screen.sass */
+.gpmbg {
+  background-color: purple;
+}
+
+/* line 229, content/s/screen.sass */
 .gpm2test {
   z-index: 190;
   background: url(../i/gpmbg.png) repeat-y;

@@ -1,0 +1,97 @@
+@mixin spinnerbase {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -250px 0 0 -250px;
+  height: 500px;
+  width: 500px;
+  z-index: 5;
+  border: none;
+  overflow: hidden;
+  
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-in-out;
+  
+}
+
+#sss {
+  @include spinnerbase;
+  
+  -webkit-animation-name: spin;
+  -webkit-animation-duration: 10s;
+
+}
+  
+#ppp {
+  @include spinnerbase;
+  
+  -webkit-animation-name: spin;
+  -webkit-animation-duration: 14s;
+
+}
+
+#lll {
+  @include spinnerbase;
+  
+  -webkit-animation-name: spinneg;
+  -webkit-animation-duration: 15s;
+
+}
+ 
+#eee {
+  @include spinnerbase;
+  
+  -webkit-animation-name: spin;
+  -webkit-animation-duration: 20s;
+
+} 
+
+#nnn {
+  @include spinnerbase;
+  
+  -webkit-animation-name: spinneg;
+  -webkit-animation-duration: 12s;
+
+}
+
+#ddd {
+  @include spinnerbase;
+  
+  -webkit-animation-name: spinneg;
+  -webkit-animation-duration: 16s;
+
+}
+
+#ooo {
+  @include spinnerbase;
+  
+  -webkit-animation-name: spin;
+  -webkit-animation-duration: 18s;
+
+}
+
+#rr1 {
+  @include spinnerbase;
+  
+  -webkit-animation-name: spinneg;
+  -webkit-animation-duration: 11s;
+
+}
+
+#rr2 {
+  @include spinnerbase;
+  
+  -webkit-animation-name: spin;
+  -webkit-animation-duration: 24s;
+
+}
+  
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@-webkit-keyframes spinneg {
+    0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(-360deg); }
+}
