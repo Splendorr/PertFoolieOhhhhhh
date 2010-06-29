@@ -149,12 +149,13 @@ img
   margin-top: -$sepheight
   border-bottom: solid $sepheight $sepcolor
   //margin-left: -1em
-  padding-left: 1em
+  //padding-left: 1em
+  padding-bottom: 2em
   overflow: visible
   
 @mixin showcase
   +columns(7,12)
-  +leader(1, 16px)
+  +leader(2, 16px)
   //align: center
   //+alpha
   //margin-left: -$sepheight 
@@ -164,7 +165,7 @@ img
   
 @mixin descrip
   +columns(5,12)
-  +leader(1, 16px)
+  +leader(2, 16px)
   //margin-left: -$sepheight 
   //margin-right: -$sepheight
   //border: solid $sepheight rgba(255, 255, 255, 0.4)
@@ -172,6 +173,7 @@ img
   
   p
     //+adjust-font-size-to(24px)
+    +sans-family
     +leader(1, 24px)
     padding-right: 1em
     //width: 22em
@@ -183,7 +185,9 @@ img
     +adjust-font-size-to(24px)
   
   .scriphead
-    +adjust-font-size-to(24px)
+    +adjust-font-size-to(28px)
+    text-shadow: black 1px 1px 0px
+    line-height: 1em
   
 #leftistshowcase
   +showcase
@@ -195,6 +199,11 @@ img
     border: solid $sepheight rgba(255, 255, 255, 0.4)
     height: 300px
     background: #f5f5d8
+    
+  img
+    //max-width: 32em
+    border: solid $sepheight rgba(255, 255, 255, 0.4)
+    //margin: -$sepheight
   
 #leftistdescrip
   +descrip
@@ -210,10 +219,41 @@ img
   +descrip
   
   p
-    margin-left: 1em
+    //margin-left: 1em
     
   #entryheader
     margin-left: 1em
+    
+  .scriphead
+    //+columns(4,5)
+    max-width: 100%
+    //margin-right: 1em
+    //background: rgba(37, 83, 119, 0.7)
+    background: $bgteal
+    color: $white
+    //background: url(/i/icebanner.jpg) no-repeat right top
+    margin-left: -90em
+    padding-left: 90em
+    //margin-left: -3em
+    //padding-left: 3em
+    //padding-right: 1em
+    //margin-top: -90em
+    //padding-top: 90em
+    padding-top: 0.5em
+    padding-bottom: 0.5em
+    //+rhythm-borders(4px)
+
+    -moz-transition-property: all
+    -webkit-transition-property: all
+    -o-transition-property: all
+    transition-property: all
+    -moz-transition-duration: 0.2s
+    -webkit-transition-duration: 0.2s
+    -o-transition-duration: 0.2s
+    transition-duration: 0.2s
+
+    &:hover, &:focus
+      background-color: $bghoverteal
     
 
   
@@ -229,6 +269,11 @@ img
     height: 300px
     background: #f5f5d8
 
+  img
+    max-width: 95%
+    //margin-left: -0.5em
+    float: right
+    border: solid $sepheight rgba(255, 255, 255, 0.4)
     
 //#entryheader
   margin-right: 1em
@@ -266,6 +311,7 @@ img
 .splenhead
   //background: rgba(37, 83, 119, 0.7)
   background: $bgteal
+  color: $white
   //background: url(/i/icebanner.jpg) no-repeat right top
   margin-left: -90em
   padding-left: 90em
