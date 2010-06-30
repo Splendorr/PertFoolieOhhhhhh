@@ -570,15 +570,20 @@ body {
   text-align: left;
   margin-left: auto;
   margin-right: auto;
-  width: 63em;
+  width: 66em;
   max-width: 100%;
-  background-image: url('../i/grid.png');
+  background-image: url(../i/grid.png);
   background-repeat: repeat;
   background-position: 2em 0;
 }
 /* line 8, /usr/local/lib/ruby/gems/1.9.1/gems/compass-0.10.2/frameworks/compass/stylesheets/compass/utilities/general/./_hacks.scss */
 #page {
   display: block;
+}
+
+/* line 20, content/s/screen.sass */
+#page {
+  overflow: visible;
 }
 
 /* line 58, content/s/screen.sass */
@@ -597,11 +602,11 @@ img {
 #fullwidth {
   display: inline;
   float: left;
-  width: 93.651%;
-  margin-right: 1.587%;
+  width: 93.939%;
+  margin-right: 1.515%;
   display: inline;
   float: right;
-  margin-right: 3.175%;
+  margin-right: 3.03%;
   /* ugly hacks for IE6-7 */
   #margin-left: -1em;
 }
@@ -611,11 +616,11 @@ img {
   position: relative;
   display: inline;
   float: left;
-  width: 93.651%;
-  margin-right: 1.587%;
+  width: 93.939%;
+  margin-right: 1.515%;
   display: inline;
   float: right;
-  margin-right: 3.175%;
+  margin-right: 3.03%;
   /* ugly hacks for IE6-7 */
   #margin-left: -1em;
   background: url(../i/headertemp.jpg) no-repeat;
@@ -629,11 +634,11 @@ img {
   position: relative;
   display: inline;
   float: left;
-  width: 93.651%;
-  margin-right: 1.587%;
+  width: 93.939%;
+  margin-right: 1.515%;
   display: inline;
   float: right;
-  margin-right: 3.175%;
+  margin-right: 3.03%;
   /* ugly hacks for IE6-7 */
   #margin-left: -1em;
   margin-top: -6px;
@@ -642,156 +647,27 @@ img {
   overflow: visible;
 }
 
-/* line 118, content/s/screen.sass */
-#leftistshowcase {
-  display: inline;
-  float: left;
-  width: 57.627%;
-  margin-right: 1.695%;
-  margin-top: 3em;
-}
-/* line 121, content/s/screen.sass */
-#leftistshowcase #imgplaceholder {
-  max-width: 32em;
-  margin-right: 0em;
-  border: solid 6px rgba(255, 255, 255, 0.4);
-  height: 300px;
-  background: #f5f5d8;
-}
-/* line 129, content/s/screen.sass */
-#leftistshowcase img {
-  border: solid 6px rgba(255, 255, 255, 0.4);
-}
-
-/* line 134, content/s/screen.sass */
-#rightmongershowcase {
-  display: inline;
-  float: left;
-  width: 57.627%;
-  margin-right: 1.695%;
-  margin-top: 3em;
-  display: inline;
-  float: right;
-  margin-right: 0;
-  /* ugly hacks for IE6-7 */
-  #margin-left: -1em;
-}
-/* line 138, content/s/screen.sass */
-#rightmongershowcase #imgplaceholder {
-  max-width: 32em;
-  margin-left: 0em;
-  margin-right: 1em;
-  border: solid 6px rgba(255, 255, 255, 0.4);
-  height: 300px;
-  background: #f5f5d8;
-}
-/* line 146, content/s/screen.sass */
-#rightmongershowcase img {
-  max-width: 95%;
-  float: right;
-  border: solid 6px rgba(255, 255, 255, 0.4);
-  -moz-transition-property: all;
-  -webkit-transition-property: all;
-  -o-transition-property: all;
-  transition-property: all;
-  -moz-transition-duration: 0.2s;
-  -webkit-transition-duration: 0.2s;
-  -o-transition-duration: 0.2s;
-  transition-duration: 0.2s;
-}
-/* line 153, content/s/screen.sass */
-#rightmongershowcase img:hover, #rightmongershowcase img:focus {
-  border: solid 6px rgba(16, 63, 83, 0.8);
-}
-
-/* line 156, content/s/screen.sass */
-#caselets {
-  display: inline;
-  float: left;
-  width: 100%;
-  margin-right: 2.941%;
-  margin-top: 0.75em;
-  text-align: justify;
-}
-
-/* line 161, content/s/screen.sass */
-#caselet {
-  display: inline;
-  float: left;
-  width: 26.471%;
-  margin-right: 2.941%;
-}
-
-/* line 164, content/s/screen.sass */
-.caselast {
-  display: inline;
-  float: right;
-  margin-right: 0;
-  /* ugly hacks for IE6-7 */
-  #margin-left: -1em;
-}
-
-/* line 168, content/s/screen.sass */
-#leftistdescrip {
-  display: inline;
-  float: left;
-  width: 40.678%;
-  margin-right: 1.695%;
-  margin-top: 3em;
-  display: inline;
-  float: right;
-  margin-right: 0;
-  /* ugly hacks for IE6-7 */
-  #margin-left: -1em;
-}
-/* line 105, content/s/screen.sass */
-#leftistdescrip p {
-  margin-top: 1em;
-  padding-right: 1em;
-}
-/* line 110, content/s/screen.sass */
-#leftistdescrip h1 {
-  font-size: 1.5em;
-  line-height: 1em;
-}
-/* line 113, content/s/screen.sass */
-#leftistdescrip .scriphead {
+/* line 114, content/s/screen.sass */
+.scriphead {
   font-size: 1.75em;
   line-height: 1.714em;
   text-shadow: black 1px 1px 0px;
   line-height: 1em;
 }
 
-/* line 178, content/s/screen.sass */
+/* line 119, content/s/screen.sass */
 #rightmongerdescrip {
   display: inline;
   float: left;
-  width: 40.678%;
-  margin-right: 1.695%;
+  width: 37.097%;
+  margin-right: 1.613%;
   margin-top: 3em;
 }
-/* line 105, content/s/screen.sass */
-#rightmongerdescrip p {
-  margin-top: 1em;
-  padding-right: 1em;
-}
-/* line 110, content/s/screen.sass */
-#rightmongerdescrip h1 {
-  font-size: 1.5em;
-  line-height: 1em;
-}
-/* line 113, content/s/screen.sass */
-#rightmongerdescrip .scriphead {
-  font-size: 1.75em;
-  line-height: 1.714em;
-  text-shadow: black 1px 1px 0px;
-  line-height: 1em;
-}
-/* line 184, content/s/screen.sass */
+/* line 125, content/s/screen.sass */
 #rightmongerdescrip #entryheader {
   margin-left: 1em;
 }
-/* line 187, content/s/screen.sass */
+/* line 128, content/s/screen.sass */
 #rightmongerdescrip .scriphead {
   max-width: 100%;
   background: rgba(12, 39, 50, 0.8);
@@ -809,12 +685,90 @@ img {
   -o-transition-duration: 0.2s;
   transition-duration: 0.2s;
 }
-/* line 208, content/s/screen.sass */
+/* line 149, content/s/screen.sass */
 #rightmongerdescrip .scriphead:hover, #rightmongerdescrip .scriphead:focus {
   background-color: rgba(16, 63, 83, 0.8);
 }
 
-/* line 211, content/s/screen.sass */
+/* line 152, content/s/screen.sass */
+#rightmongershowcase {
+  display: inline;
+  float: left;
+  width: 56.452%;
+  margin-right: 1.613%;
+  margin-top: 3em;
+  display: inline;
+  float: right;
+  margin-right: 0;
+  /* ugly hacks for IE6-7 */
+  #margin-left: -1em;
+}
+/* line 106, content/s/screen.sass */
+#rightmongershowcase p {
+  margin-top: 1em;
+}
+/* line 111, content/s/screen.sass */
+#rightmongershowcase h1 {
+  font-size: 1.5em;
+  line-height: 1em;
+}
+/* line 157, content/s/screen.sass */
+#rightmongershowcase img {
+  -moz-transition-property: all;
+  -webkit-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -moz-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+}
+
+/* line 167, content/s/screen.sass */
+#caselets {
+  display: inline;
+  float: left;
+  width: 100%;
+  margin-right: 2.857%;
+  display: inline;
+  float: right;
+  margin-right: 0;
+  /* ugly hacks for IE6-7 */
+  #margin-left: -1em;
+  margin-top: 0.75em;
+  float: right;
+}
+
+/* line 177, content/s/screen.sass */
+#caselet1 {
+  display: inline;
+  float: left;
+  width: 31.429%;
+  margin-right: 2.857%;
+}
+
+/* line 179, content/s/screen.sass */
+#caselet2 {
+  display: inline;
+  float: left;
+  width: 31.429%;
+  margin-right: 2.857%;
+}
+
+/* line 181, content/s/screen.sass */
+#caselet3 {
+  display: inline;
+  float: left;
+  width: 31.429%;
+  margin-right: 2.857%;
+  display: inline;
+  float: right;
+  margin-right: 0;
+  /* ugly hacks for IE6-7 */
+  #margin-left: -1em;
+}
+
+/* line 185, content/s/screen.sass */
 .gpm {
   background: url(../i/gpmbg.png) repeat;
   z-index: 195;
@@ -822,37 +776,37 @@ img {
   color: white;
 }
 
-/* line 219, content/s/screen.sass */
+/* line 193, content/s/screen.sass */
 .gpmbg {
   background-color: purple;
   background: url(../i/gpmbg.png) repeat;
 }
 
-/* line 223, content/s/screen.sass */
+/* line 197, content/s/screen.sass */
 .gpm2test {
   z-index: 190;
   background: url(../i/gpmbg.png) repeat-y;
   padding-bottom: 2em;
 }
 
-/* line 230, content/s/screen.sass */
+/* line 204, content/s/screen.sass */
 #realfull {
   clear: both;
-  margin-right: 3.175%;
-  margin-left: 3.175%;
+  margin-right: 3.03%;
+  margin-left: 3.03%;
 }
 
-/* line 233, content/s/screen.sass */
+/* line 207, content/s/screen.sass */
 #leftcol {
   display: inline;
   float: left;
-  width: 57.627%;
-  margin-right: 1.695%;
+  width: 56.452%;
+  margin-right: 1.613%;
   margin-top: 4.5em;
   color: #0c2832;
 }
 
-/* line 238, content/s/screen.sass */
+/* line 212, content/s/screen.sass */
 .splenhead {
   background: rgba(12, 39, 50, 0.8);
   color: white;
@@ -870,7 +824,7 @@ img {
   -o-transition-duration: 0.2s;
   transition-duration: 0.2s;
 }
-/* line 256, content/s/screen.sass */
+/* line 230, content/s/screen.sass */
 .splenhead:hover, .splenhead:focus {
   background-color: rgba(16, 63, 83, 0.8);
 }
