@@ -99,10 +99,6 @@ img
   //+suffix(1, 21)
   +leader(2, 16px)
   
-@mixin showcase
-  +columns(12, 21)
-  +leader(2, 16px)
-  
   p
     //+sans-family
     +leader(1, 24px)
@@ -110,11 +106,15 @@ img
     
   h1
     +adjust-font-size-to(24px)
+    
+  .scriphead
+    +adjust-font-size-to(28px)
+    text-shadow: black 1px 1px 0px
+    line-height: 1em
   
-.scriphead
-  +adjust-font-size-to(28px)
-  text-shadow: black 1px 1px 0px
-  line-height: 1em
+@mixin showcase
+  +columns(12, 21)
+  +leader(2, 16px)
   
 #rightmongerdescrip
   +descrip
@@ -158,11 +158,12 @@ img
     //max-width: 95%
     //margin-left: -0.5em
     //float: right
-    //border: solid 1px rgba(255, 255, 255, 0.4)
+    +box-sizing(border-box)
+    border: solid 0.3em rgba(255, 255, 255, 0.4)
     +trans-all
     
-    //&:hover, &:focus
-      border: solid 1px $bghoverteal
+    &:hover, &:focus
+      border: solid 0.3em $bghoverteal
 
 #caselets
   +columns(12, 12)
