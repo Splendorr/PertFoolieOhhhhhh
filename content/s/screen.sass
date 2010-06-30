@@ -17,7 +17,7 @@
   +container
   +show-grid("grid.png")
   
-#page
+//#page
   overflow: visible
 
 // show-grid loads a 64+16x24 grid image by default
@@ -53,6 +53,7 @@ $bghoverteal: rgba(16, 63, 83, 0.8)
   -webkit-transition-duration: 0.2s
   -o-transition-duration: 0.2s
   transition-duration: 0.2s
+
 
 body
   background-color: $white
@@ -102,7 +103,7 @@ img
   +leader(2, 16px)
   
   p
-    +sans-family
+    //+sans-family
     +leader(1, 24px)
     padding-right: 1em
     
@@ -147,7 +148,23 @@ img
     //margin-left: -0.5em
     float: right
     border: solid $sepheight rgba(255, 255, 255, 0.4)
+    +trans-all
+    
+    &:hover, &:focus
+      border: solid $sepheight $bghoverteal
+
+#caselets
+  +columns(7, 7)
+  +leader(0.5, 16px)
+  text-align: justify
+
+#caselet
+  +columns(2, 7)
+
+.caselast
+  +omega(7)
   
+
 #leftistdescrip
   +descrip
   +omega(12)
@@ -214,7 +231,7 @@ img
   +full
 
 #leftcol
-  +columns(5, 12)
+  +columns(7, 12)
   +leader(3, 16px)
   color: $teal
   

@@ -581,11 +581,6 @@ body {
   display: block;
 }
 
-/* line 20, content/s/screen.sass */
-#page {
-  overflow: visible;
-}
-
 /* line 58, content/s/screen.sass */
 body {
   background-color: white;
@@ -695,9 +690,48 @@ img {
   max-width: 95%;
   float: right;
   border: solid 6px rgba(255, 255, 255, 0.4);
+  -moz-transition-property: all;
+  -webkit-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -moz-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+}
+/* line 153, content/s/screen.sass */
+#rightmongershowcase img:hover, #rightmongershowcase img:focus {
+  border: solid 6px rgba(16, 63, 83, 0.8);
 }
 
-/* line 152, content/s/screen.sass */
+/* line 156, content/s/screen.sass */
+#caselets {
+  display: inline;
+  float: left;
+  width: 100%;
+  margin-right: 2.941%;
+  margin-top: 0.75em;
+  text-align: justify;
+}
+
+/* line 161, content/s/screen.sass */
+#caselet {
+  display: inline;
+  float: left;
+  width: 26.471%;
+  margin-right: 2.941%;
+}
+
+/* line 164, content/s/screen.sass */
+.caselast {
+  display: inline;
+  float: right;
+  margin-right: 0;
+  /* ugly hacks for IE6-7 */
+  #margin-left: -1em;
+}
+
+/* line 168, content/s/screen.sass */
 #leftistdescrip {
   display: inline;
   float: left;
@@ -712,7 +746,6 @@ img {
 }
 /* line 105, content/s/screen.sass */
 #leftistdescrip p {
-  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
   margin-top: 1em;
   padding-right: 1em;
 }
@@ -729,7 +762,7 @@ img {
   line-height: 1em;
 }
 
-/* line 162, content/s/screen.sass */
+/* line 178, content/s/screen.sass */
 #rightmongerdescrip {
   display: inline;
   float: left;
@@ -739,7 +772,6 @@ img {
 }
 /* line 105, content/s/screen.sass */
 #rightmongerdescrip p {
-  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
   margin-top: 1em;
   padding-right: 1em;
 }
@@ -755,11 +787,11 @@ img {
   text-shadow: black 1px 1px 0px;
   line-height: 1em;
 }
-/* line 168, content/s/screen.sass */
+/* line 184, content/s/screen.sass */
 #rightmongerdescrip #entryheader {
   margin-left: 1em;
 }
-/* line 171, content/s/screen.sass */
+/* line 187, content/s/screen.sass */
 #rightmongerdescrip .scriphead {
   max-width: 100%;
   background: rgba(12, 39, 50, 0.8);
@@ -777,12 +809,12 @@ img {
   -o-transition-duration: 0.2s;
   transition-duration: 0.2s;
 }
-/* line 192, content/s/screen.sass */
+/* line 208, content/s/screen.sass */
 #rightmongerdescrip .scriphead:hover, #rightmongerdescrip .scriphead:focus {
   background-color: rgba(16, 63, 83, 0.8);
 }
 
-/* line 195, content/s/screen.sass */
+/* line 211, content/s/screen.sass */
 .gpm {
   background: url(../i/gpmbg.png) repeat;
   z-index: 195;
@@ -790,37 +822,37 @@ img {
   color: white;
 }
 
-/* line 203, content/s/screen.sass */
+/* line 219, content/s/screen.sass */
 .gpmbg {
   background-color: purple;
   background: url(../i/gpmbg.png) repeat;
 }
 
-/* line 207, content/s/screen.sass */
+/* line 223, content/s/screen.sass */
 .gpm2test {
   z-index: 190;
   background: url(../i/gpmbg.png) repeat-y;
   padding-bottom: 2em;
 }
 
-/* line 214, content/s/screen.sass */
+/* line 230, content/s/screen.sass */
 #realfull {
   clear: both;
   margin-right: 3.175%;
   margin-left: 3.175%;
 }
 
-/* line 217, content/s/screen.sass */
+/* line 233, content/s/screen.sass */
 #leftcol {
   display: inline;
   float: left;
-  width: 40.678%;
+  width: 57.627%;
   margin-right: 1.695%;
   margin-top: 4.5em;
   color: #0c2832;
 }
 
-/* line 222, content/s/screen.sass */
+/* line 238, content/s/screen.sass */
 .splenhead {
   background: rgba(12, 39, 50, 0.8);
   color: white;
@@ -838,7 +870,7 @@ img {
   -o-transition-duration: 0.2s;
   transition-duration: 0.2s;
 }
-/* line 240, content/s/screen.sass */
+/* line 256, content/s/screen.sass */
 .splenhead:hover, .splenhead:focus {
   background-color: rgba(16, 63, 83, 0.8);
 }
