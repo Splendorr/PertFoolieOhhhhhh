@@ -6,6 +6,7 @@
 
 @import defaults
 @import wheel
+@import layertest
 
 // Layout --------------------------------------------------------------
 
@@ -43,6 +44,16 @@ $bghoverteal: rgba(16, 63, 83, 0.8)
 
 // General Styles
 
+@mixin trans-all
+  -moz-transition-property: all
+  -webkit-transition-property: all
+  -o-transition-property: all
+  transition-property: all
+  -moz-transition-duration: 0.2s
+  -webkit-transition-duration: 0.2s
+  -o-transition-duration: 0.2s
+  transition-duration: 0.2s
+
 body
   background-color: $white
   background: url(/i/noisebg.png) repeat
@@ -58,79 +69,8 @@ img
   
   //*
     background-color: rgba(0, 0, 0, 0.3)
+  
 
-#leftmost
-  +columns(9, 12)
-
-#sitetitle
-  +columns(9, 9)
-  //padding: 24px 24px 24px 24px
-  background-color: rgba(0, 0, 0, 0.25)
-  //background-color: rgba(0, 50, 94, 0.5)
-  
-  #splendorr
-    +adjust-font-size-to(48px)
-    padding: 24px 24px 0px 24px
-  #subtitorr
-    +adjust-font-size-to(24px)
-    margin-left: 8em
-    padding-bottom: 16px
-  
-#toc
-  +columns(8, 9)
-  +prefix(1, 9)
-  +leader(1, 24px)
-  //+omega(8)
-  padding-top: 16px
-  padding-bottom: 16px
-  background-color: rgba(0, 0, 0, 0.25)
-  
-.toctitle
-  +adjust-font-size-to(30px)
-  font-style: italic
-.tocheader
-  +adjust-font-size-to(24px)
-  padding-left: 16px
-  
-#rightmost
-  +columns(3, 12)
-  +omega(12)
-  background-color: rgba(0, 0, 0, 0.25)
-  
-// Layer Test
-
-#fartherbutton
-  position: relative
-  z-index: 5
-  width: 200px
-  height: 200px
-  text-align: center
-
-  //border: solid 8px blue
-  //text-align:right
-  background-color: blue
-  
-  &:hover, &:focus
-    //border: solid 8px green
-    background-color: green
-    
-#closerbutton
-  position: relative
-  top: -150px
-  left: 50px
-  z-index: 10
-  width: 100px
-  height: 100px
-  text-align: center
-  
-  //border: solid 8px red
-  //text-align:right
-  background-color: red
-  
-  &:hover, &:focus
-    //border: solid 8px purple
-    background-color: purple
-    
 // Pertblock2 Styles
 
 #headerspace
@@ -156,30 +96,15 @@ img
 @mixin showcase
   +columns(7,12)
   +leader(2, 16px)
-  //align: center
-  //+alpha
-  //margin-left: -$sepheight 
-  //margin-right: -$sepheight
-  //border: solid $sepheight rgba(255, 255, 255, 0.4)
-  //height: 300px
   
 @mixin descrip
   +columns(5,12)
   +leader(2, 16px)
-  //margin-left: -$sepheight 
-  //margin-right: -$sepheight
-  //border: solid $sepheight rgba(255, 255, 255, 0.4)
-  //height: 400px
   
   p
-    //+adjust-font-size-to(24px)
     +sans-family
     +leader(1, 24px)
     padding-right: 1em
-    //width: 22em
-    //margin-left: 0em
-    //margin-right: 1em
-    //border: solid $sepheight rgba(255, 255, 255, 0.4)
     
   h1
     +adjust-font-size-to(24px)
@@ -204,6 +129,24 @@ img
     //max-width: 32em
     border: solid $sepheight rgba(255, 255, 255, 0.4)
     //margin: -$sepheight
+    
+#rightmongershowcase
+  +showcase
+  +omega(12)
+  
+  #imgplaceholder
+    max-width: 32em
+    margin-left: 0em
+    margin-right: 1em
+    border: solid $sepheight rgba(255, 255, 255, 0.4)
+    height: 300px
+    background: #f5f5d8
+
+  img
+    max-width: 95%
+    //margin-left: -0.5em
+    float: right
+    border: solid $sepheight rgba(255, 255, 255, 0.4)
   
 #leftistdescrip
   +descrip
@@ -243,42 +186,11 @@ img
     padding-bottom: 0.5em
     //+rhythm-borders(4px)
 
-    -moz-transition-property: all
-    -webkit-transition-property: all
-    -o-transition-property: all
-    transition-property: all
-    -moz-transition-duration: 0.2s
-    -webkit-transition-duration: 0.2s
-    -o-transition-duration: 0.2s
-    transition-duration: 0.2s
+    +trans-all
 
     &:hover, &:focus
       background-color: $bghoverteal
     
-
-  
-#rightmongershowcase
-  +showcase
-  +omega(12)
-  
-  #imgplaceholder
-    max-width: 32em
-    margin-left: 0em
-    margin-right: 1em
-    border: solid $sepheight rgba(255, 255, 255, 0.4)
-    height: 300px
-    background: #f5f5d8
-
-  img
-    max-width: 95%
-    //margin-left: -0.5em
-    float: right
-    border: solid $sepheight rgba(255, 255, 255, 0.4)
-    
-//#entryheader
-  margin-right: 1em
-  
-  
 .gpm
   background: url(/i/gpmbg.png) repeat
   //opacity: 0.8
@@ -304,8 +216,6 @@ img
 #leftcol
   +columns(5, 12)
   +leader(3, 16px)
-  //+alpha
-  //overflow: display
   color: $teal
   
 .splenhead
@@ -324,14 +234,7 @@ img
   padding-bottom: 1em
   //+rhythm-borders(4px)
   
-  -moz-transition-property: all
-  -webkit-transition-property: all
-  -o-transition-property: all
-  transition-property: all
-  -moz-transition-duration: 0.2s
-  -webkit-transition-duration: 0.2s
-  -o-transition-duration: 0.2s
-  transition-duration: 0.2s
+  +trans-all
   
   &:hover, &:focus
     background-color: $bghoverteal
